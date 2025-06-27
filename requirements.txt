@@ -1,0 +1,31 @@
+# NLP + Summarization + Transformers
+transformers[sentencepiece]
+datasets
+evaluate
+torch
+
+# Text Cleaning & Scoring
+nltk
+rouge_score
+sacrebleu
+
+# Web Interface
+gradio==5.34.2
+fastapi>=0.115.2,<1.0
+pydantic>=2.0,<2.12
+starlette>=0.40.0,<1.0
+uvicorn>=0.18,<0.30
+Jinja2>=3.1,<4.0
+
+# Utilities
+pandas
+tqdm
+PyYAML
+python-box==6.0.2
+ensure==1.0.2
+py7zr
+
+# Optional
+notebook
+boto3
+mypy-boto3-s3
