@@ -47,3 +47,18 @@ except Exception as e:
     logger.exception(e)
     raise e
 
+
+from src.textSummarizer.pipeline.ModelEvaluation_Pipeline import ModelEvaluationTrainingPipeline
+STAGE_NAME= "Model Evaluation Stage"
+try:
+
+    logger.info(f"*******************")
+    logger.info(f">>>>>> Stage {STAGE_NAME} gets Initiated <<<<<<")
+   
+    model_evaluation= ModelEvaluationTrainingPipeline()
+    model_evaluation.initiate_model_evaluation()
+    logger.info(f">>>>>> Stage {STAGE_NAME} has Completed <<<<<<\n\nx==========x")
+   
+except Exception as e:
+    logger.exception(e)
+    raise e
